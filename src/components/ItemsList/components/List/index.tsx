@@ -6,7 +6,6 @@ interface Props {
 }
 
 const List = ({ accountsArray }: Props) => {
-  console.log(accountsArray, 666);
   return (
     <ul className="list">
       {accountsArray.map((account) => (

@@ -30,7 +30,7 @@ const AutoCompleteInput = ({ handleUsername, isLoading }: Props) => {
       <input
         value={inputValue}
         type="text"
-        placeholder="Search here"
+        placeholder="Search Github Username"
         onChange={handleValueChange}
       />
       {isLoading && <LoadingIcon />}
