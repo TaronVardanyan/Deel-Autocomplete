@@ -1,4 +1,56 @@
 .input-wrapper {
-   width: 100%;
-   margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 0;
+  min-height: 5vh;
+  animation-name: increaseWidth;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  border-radius: 0.75rem;
+  background: rgba(128, 128, 128, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-wrapper > input {
+  width: 100%;
+  margin: 0 1rem;
+  height: 4vh;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.input-wrapper > svg {
+  position: absolute;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes increaseWidth {
+  0% {
+    visibility: hidden;
+    width: 0;
+  }
+  100% {
+    visibility: visible;
+    width: 100%;
+  }
 }
