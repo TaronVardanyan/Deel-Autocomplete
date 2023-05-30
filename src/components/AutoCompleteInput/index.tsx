@@ -22,7 +22,7 @@ const AutoCompleteInput = ({ handleUsername, isLoading }: Props) => {
   useEffect(() => {
     //detecting a change of input state and passing updated value to parent component with callback
     handleUsername(enteredValue);
-  }, [enteredValue, handleUsername]);
+  }, [enteredValue]);
 
   return (
     <div className="input-wrapper">
