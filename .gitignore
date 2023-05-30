@@ -1,0 +1,44 @@
+# Dependency directories
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.bak
+*.swp
+*~
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+*.log
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# macOS specific files
+.DS_Store
+
+# Compiled output
+*.class
+*.jar
+
+# Miscellaneous
+*.md
+*.pdf
+*.zip
