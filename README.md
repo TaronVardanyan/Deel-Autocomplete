@@ -42,7 +42,7 @@ yarn run test
 * Website: https://dev.to/taronvardanyan
 * Twitter: [@tarokavardanyan](https://twitter.com/tarokavardanyan)
 * Github: [@TaronVardanyan](https://github.com/TaronVardanyan)
-* LinkedIn: [@Taron Vardanyan](https://linkedin.com/in/Taron Vardanyan)
+* LinkedIn: [@Taron Vardanyan](https://linkedin.com/in/TaronVardanyan)
 
 ## Show your support
 
