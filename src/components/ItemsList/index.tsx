@@ -10,7 +10,7 @@ interface Props {
 const ItemsList = ({ accounts }: Props) => {
   return (
     <div className="items-list">
-      {!!accounts.length ? <List accountsArray={accounts} /> : <EmptyResult />}
+      {accounts.length ? <List accountsArray={accounts} /> : <EmptyResult />}
     </div>
   );
 };
