@@ -13,7 +13,6 @@ function App() {
   const [accounts, setAccountsData] = useState<AccountI[] | null>(null);
 
   const handleFetch = async (username: string) => {
-    console.log(username, 6666);
     try {
       const response = await fetch(BASE_URL + username);
 
@@ -25,7 +24,7 @@ function App() {
       //turn off loading
       setLoadingState(false);
       // setting the response data
-      setAccountsData(data);
+      setAccountsData(data.items);
     } catch (error) {
       // Handle any errors that occur during the request
       console.error('Error:', error);
@@ -44,13 +43,14 @@ function App() {
       handleFetch(username);
     } else {
       setLoadingState(false);
+      setAccountsData(null);
     }
   };
 
   return (
     <div className="App">
       <AutoCompleteInput handleUsername={handleUsername} isLoading={isLoading} />
-      {accounts ? <ItemsList /> : <Welcome />}
+      {accounts ? <ItemsList accounts={accounts} /> : <Welcome />}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { ChangeEvent, useState, useEffect } from 'react';
 import { useDebounce } from '../../hooks';
 import { LoadingIcon } from '../../icons';
+import { DEBOUNCE_DEFAULT } from '../../utils';
 import './AutoCompleteInput.css';
 
 interface Props {
@@ -12,7 +13,7 @@ const AutoCompleteInput = ({ handleUsername, isLoading }: Props) => {
   //saving input value in local state
   const [inputValue, setInputValue] = useState('');
   //passing updated state to debounce custom hook
-  const enteredValue = useDebounce(inputValue, 500);
+  const enteredValue = useDebounce(inputValue, DEBOUNCE_DEFAULT);
 
   const handleValueChange = (event: ChangeEvent<HTMLInputElement>) => {
     //setting a new updated value to local state

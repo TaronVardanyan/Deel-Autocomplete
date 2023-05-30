@@ -1,8 +1,8 @@
 .App {
-  width: 60%;
+  width: 50%;
   height: 100%;
   min-height: 20dvh;
-  max-height: 50dvh;
+  max-height: 60dvh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

@@ -1,0 +1,63 @@
+.list {
+  width: 100%;
+  height: 100%;
+  max-height: 45dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.account-tile {
+  transition: 0.3s;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  background: rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-tile > a {
+  margin-right: 1rem;
+  color: black;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.account-tile > a:hover {
+  color: white;
+}
+
+.account-tile:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.account-tile::last-child {
+  margin-bottom: 0;
+}
+
+.account-info {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-info > img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.account-info > h4 {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
