@@ -1,3 +1,14 @@
 .App {
-  text-align: center;
+  width: 50%;
+  height: 100%;
+  min-height: 20dvh;
+  max-height: 60dvh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background: rgba(128, 128, 128, 0.4);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  color: white;
 }
