@@ -1,0 +1,13 @@
+.welcome {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome > p,
+h1 {
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
