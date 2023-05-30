@@ -1,0 +1,11 @@
+.empty-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.empty-result > p {
+  margin: 0 0 1rem 0;
+}

@@ -1,4 +1,7 @@
 export const BASE_URL = 'https://api.github.com/search/users?q=';
+
+export const DEBOUNCE_DEFAULT = 50;
+
 export interface AccountI {
   avatar_url: string;
   events_url: string;
