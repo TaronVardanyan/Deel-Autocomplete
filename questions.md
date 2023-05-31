@@ -82,7 +82,5 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
       lifecycle should be structured in good maner.
 
       2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it only in specific cases, when it will detect State or Props change.
-   </p>
-  </p>
-
+      </p>
   <br/>
