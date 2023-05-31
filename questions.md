@@ -45,16 +45,18 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
 
 <p>
    When you want to pass information from a component to its parent in React, there are several approaches you can take. Here are three common ways to achieve this:
-
+   <br/>
    1. Callback Functions.
       <i>
          One way to pass information from a component to its parent in React is by using callback functions. In this approach, the parent component provides a callback function as a prop to the child component. The child component can invoke the callback function and pass the relevant information as an argument. The parent component receives the data through the callback function and can handle it accordingly. This enables communication between the child and parent components, allowing data to be passed back to the parent.
       </i>
       <br/>
+      <br/>
       2. Context API.
       <i>
          Another approach to passing information from a component to its parent is by utilizing the Context API in React. With the Context API, the parent component creates a context and provides a value to it. The child component can consume the context and access the provided value using the useContext hook. This allows the child component to share data directly with its parent, bypassing intermediate components if necessary.
       </i>
+      <br/>
       <br/>
       3. State Management.
       <i>
