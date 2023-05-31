@@ -87,7 +87,8 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   <p>
      Fragments are syntax hack that allow us to add multiple elements to a React component without wrapping them in an extra DOM node. Sometimes developing a component we need to wrap it in some block structure, because React components cannot return a multiply JSX blocks.
      Thats why React.Fragment can be really helpful. It's helping us to not get inside of "nesting hell", when there is no need to write a unused div node just as a wrapper of other jsx logic.
-
+     <br/>
+     <br/>
      There is two ways of use Fragments.
 
      1. <React.Fragment>Something</React.Fragment> , which also giving us two pass key property when we wanna use it inside of list structure.
