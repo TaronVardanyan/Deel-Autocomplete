@@ -92,9 +92,10 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      There is two ways of use Fragments.
   <br>
   <br>
-     
      1. <code><React.Fragment>Something</React.Fragment></code> , which also giving us two pass key property when we wanna use it inside of list structure.
      2. <code><>Something</></code> , Short hand sintax.
+     <br>
+     <br>
      It can break the app, when we are using some third party libs. There can be chance when that lib can ask a ReactNode to pass as a prop , and by mistake developer can pass a component which returns React.Fragment. That case can be harmful for app.
      Also there is a case which I mentioned earlier with passing a key to short hand sintax of Fragment.
      And the simple case that Fragments are not visible in DOM tree, thats why we cannot give some css styles to it ((.
