@@ -50,21 +50,39 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
    <br/>
    1. Callback Functions.
       <i>
-         One way to pass information from a component to its parent in React is by using callback functions. In this approach, the parent component provides a callback function as a prop to the child component. The child component can invoke the callback function and pass the relevant information as an argument. The parent component receives the data through the callback function and can handle it accordingly. This enables communication between the child and parent components, allowing data to be passed back to the parent.
+         One of the most popular way to pass information from a component to its parent in React is by using callback functions. In this approach, the parent component provides a callback function as a prop to the child component. The child component can invoke the callback function and pass the relevant information as an argument. The parent component receives the data through the callback function and can handle it accordingly. This enables communication between the child and parent components, allowing data to be passed back to the parent.
       </i>
       <br/>
       <br/>
       2. Context API.
       <i>
          Another approach to passing information from a component to its parent is by utilizing the Context API in React. With the Context API, the parent component creates a context and provides a value to it. The child component can consume the context and access the provided value using the useContext hook. This allows the child component to share data directly with its parent, bypassing intermediate components if necessary.
+         Context is realy helpful, whit it's simplicity.Some times it's a best option to share info between components in small and medium projects.
       </i>
       <br/>
       <br/>
       3. State Management.
       <i>
          If the application requires more advanced state management, using state management libraries like Redux or MobX can be beneficial. These libraries provide a centralized store where components can dispatch actions to update the state. The parent component can define the store and pass it to the child component as props. The child component can dispatch actions to update the store, and the parent component can listen to these changes and respond accordingly. This approach facilitates passing information from the child component to its parent while synchronizing the state across components.
+         I am a big fan of Recoil and the atomic pattern that it's use, Recoil was created by Meta platform. It's lighter than Redux and Mobx. But it's for small projects. we cannot use it on big projects. On medium or big projects I prefer use Mobx and MST.
       </i>
+      <br/>
+   </p>
+
    <br/>
+
+   <h1 align="left">4. Give 2 ways to prevent components from re-rendering.</h1>
+
+   <p>
+      There is 2 cases regarding what kind of components we wanna use Class? or Functional?
+
+      1. In the first case, whan we are using Class components and as I mentioned in questions <b>#1</b> and <b>#2</b>
+
+      We can defenatly use <b>PureComponent</b>, in other case if component instance was extended from React.Component, then our <b>shouldComponentUpdate></b>
+
+      lifecycle should be structured in good maner.
+
+      2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it only in specific cases, when it will detect State or Props change.
 </p>
 
 <br/>
