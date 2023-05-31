@@ -78,5 +78,6 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
       <br/>
      1. In the first scenario, when utilizing Class components as mentioned in questions 1 and 2, we can opt for PureComponent. However, if the component instance extends from React.Component, then we should ensure that our shouldComponentUpdate lifecycle method is implemented correctly.
 <br/>
+ <br/>
      2. The second approach, suitable when avoiding the use of Class components, involves utilizing the React.memo() higher-order component (HOC). This HOC selectively re-renders    the component wrapped within it, only when there are detected changes in the State or Props.
   </p>
