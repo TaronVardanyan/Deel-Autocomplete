@@ -175,3 +175,29 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   <p>Prefer to use 3 solution with async/await )))</p>
   <br>
 
+  <h1 align="left">8. How many arguments does setState take and why is it async</h1>
+
+  <p>
+   The main reason that setState works async is that as a developer we can have a multiply states in one component, and when user will interract with one of them other states should be able to changed also.
+   If setState was working in synchronized way then major part of client interface features will wait untill the last operation will be completed.
+   In other hand our client will be stuck, and unfortunatly we will lose his attention, because in some cases loading can take really long time or completeness of one operation will be realted to another opertaion which not even started just because of the order of it in Execution Context is not came.
+  </p>
+
+  <p>
+    setState has 2 arguments
+  </p>
+
+  <p>
+     1. newState
+     <br>
+     Represents the updated state values that you want to set in the component. It can be an object containing one or more key-value pairs representing the state changes.
+  </p>
+
+  <p>
+     2. callback
+     <br>
+     optional function that will be executed after the state has been successfully updated. It can be used to perform additional tasks or trigger side effects that rely on the updated state.
+  </p>
+
+
+
