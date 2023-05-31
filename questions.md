@@ -34,9 +34,9 @@ In contrast, <b>ShouldComponentUpdate</b> optimizes the rendering process by byp
 
 Here are a few reasons why the combination of <b>Context</b> and <b>ShouldComponentUpdate</b> can be considered risky:
 
-1. Maintenance Challenges: Combining Context with shouldComponentUpdate can increase the complexity of understanding and maintaining component behavior. It becomes harder to reason about how changes in Context may impact the decision-making process of shouldComponentUpdate. This can lead to subtle bugs and make it more difficult to maintain and modify the application over time.
-2. Context Changes: Context can provide a way to pass data down the component tree without explicitly passing props through each intermediate component. If a component relies on Context, it may not receive updates when the context value changes. As a result, the component's shouldComponentUpdate may incorrectly determine that there are no meaningful changes, leading to incorrect rendering and potential bugs.
-3. Unintended Side Effects: Context updates can affect multiple components in the component tree. When a component uses shouldComponentUpdate to optimize rendering, it may inadvertently block updates from propagating through the context. This can cause unexpected behavior and inconsistencies in the application's state and UI.
+1. (Maintenance Challenges) - Combining Context with shouldComponentUpdate can increase the complexity of understanding and maintaining component behavior. It becomes harder to reason about how changes in Context may impact the decision-making process of shouldComponentUpdate. This can lead to subtle bugs and make it more difficult to maintain and modify the application over time.
+2. (Context Change) - Context can provide a way to pass data down the component tree without explicitly passing props through each intermediate component. If a component relies on Context, it may not receive updates when the context value changes. As a result, the component's shouldComponentUpdate may incorrectly determine that there are no meaningful changes, leading to incorrect rendering and potential bugs.
+3. (Unintended Side Effects) - Context updates can affect multiple components in the component tree. When a component uses shouldComponentUpdate to optimize rendering, it may inadvertently block updates from propagating through the context. This can cause unexpected behavior and inconsistencies in the application's state and UI.
 </p>
 
 <br/>
