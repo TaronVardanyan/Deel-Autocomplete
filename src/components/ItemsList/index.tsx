@@ -5,12 +5,17 @@ import './ItemsList.css';
 
 interface Props {
   accounts: Array<AccountI>;
+  searchedValue: string;
 }
 
-const ItemsList = ({ accounts }: Props) => {
+const ItemsList = ({ accounts, searchedValue }: Props) => {
   return (
     <div className="items-list">
-      {accounts.length ? <List accountsArray={accounts} /> : <EmptyResult />}
+      {accounts.length ? (
+        <List accountsArray={accounts} searchedValue={searchedValue} />
+      ) : (
+        <EmptyResult />
+      )}
     </div>
   );
 };
