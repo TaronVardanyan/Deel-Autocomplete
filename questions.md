@@ -107,11 +107,71 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   <h1 align="left">6. Give 3 examples of the HOC pattern.</h1>
 
   <p>
-    The most popular 3 HOC's that developers using is
+    The most popular 3 HOC's that developers using are
     <br>
     1. connect HOC from react-redux package<br>
     2. withRouter HOC from react-router-dom package<br>
     3. styled HOC's from UI libs such as Material UI or Antd<br>
   </p>
-
   <br>
+
+  <h1 align="left">7. What's the difference in handling exceptions in promises, callbacks and async…await?</h1>
+
+  <p>
+     1. The Promises
+  </p>
+
+  <p>
+     Promises are the classic way to handle async operations , thay use the .then() and .catch() methods to handle resolved values and rejected errors respectively. When an error occurs within a promise chain, it can be caught using the .catch() method at any point in the chain.
+     If an error is not explicitly caught within the promise chain, it will be treated as an unhandled promise rejection, and the error will be logged to the console.
+  </p>
+  <code>
+     asyncAction()
+     .then(res => {
+        // handle resolved value
+     })
+     .catch(err => {
+        // handle error
+     });
+  </code>
+
+  <p>
+     2. Callbacks
+  </p>
+
+  <p>
+     Using Callbacks to handle error capturing is the most popular technic in Node.js. Callback functions traditionally follow an error-first callback pattern where the first parameter of the callback represents an error (if any), and subsequent parameters contain the result.
+     The error can be checked within the callback function and appropriate actions can be taken.
+  </p>
+  <code>
+     asyncAction((err, res) => {
+        if (err) {
+           // handle error
+        } else {
+           // handle result
+        }
+     });
+  </code>
+  <br>
+
+  <p>
+     3. async/await with Try/Catch blocks
+  </p>
+
+  <p>
+     Error handling in async/await using try-catch blocks, where potential errors can be caught within the try block and handled in the corresponding catch block
+  </p>
+  <code>
+     async function asyncAction() {
+        try {
+           const result = await asyncFunction();
+           // handle result
+        } catch (error) {
+           // handle error
+        }
+     }
+  </code>
+
+  <p>Prefer to use 3 solution with async/await )))</p>
+  <br>
+
