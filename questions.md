@@ -101,3 +101,17 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      Also there is a case which I mentioned earlier with passing a key to short hand sintax of Fragment.
      And the simple case that Fragments are not visible in DOM tree, thats why we cannot give some css styles to it ((.
   </p>
+
+  <br>
+
+  <h1 align="left">6. Give 3 examples of the HOC pattern.</h1>
+
+  <p>
+    The most popular 3 HOC's that developers using is
+
+    1. connect HOC from react-redux package
+    2. withRouter HOC from react-router-dom package
+    3. styled HOC's from UI libs such as Material UI or Antd
+  </p>
+
+  <br>
