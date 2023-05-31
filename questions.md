@@ -77,21 +77,12 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
       There is 2 cases regarding what kind of components we wanna use Class? or Functional?
       <br/>
 
-      1. In the first case, whan we are using Class components and as I mentioned in questions <b>#1</b> and <b>#2</b>
-
-      We can defenatly use <b>PureComponent</b>, in other case if component instance was extended from React.Component, then our <b>shouldComponentUpdate></b>
+      1. In the first case, whan we are using Class components and as I mentioned in questions <b>#1</b> and <b>#2</b> we can defenatly use <b>PureComponent</b>, in other case if component instance was extended from React.Component, then our <b>shouldComponentUpdate></b>
 
       lifecycle should be structured in good maner.
 
-<<<<<<< HEAD
       2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it only in specific cases, when it will detect State or Props change.
    </p>
-
-   <br/>
-=======
-      2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it           only in specific cases, when it will detect State or Props change.
   </p>
 
   <br/>
->>>>>>> 48692b9ab0cdc447337b1a217cce86d939cce928
-
