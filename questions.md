@@ -1,4 +1,4 @@
-<h1 align="left">What is the difference between <b>Component</b> and <b>PureComponent</b>? Give
+<h1 align="left">1. What is the difference between <b>Component</b> and <b>PureComponent</b>? Give
 an example where it might break my app.</h1>
 
 <p>
