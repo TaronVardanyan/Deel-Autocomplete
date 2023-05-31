@@ -9,6 +9,8 @@ const AutoCompleteInput = lazy(() => import('./components/AutoCompleteInput'));
 function App() {
   //setting loading state for client interface response visibility
   const [isLoading, setLoadingState] = useState(false);
+  //setting searched username string to pass it to list component to get matchet
+  const [searchedValue, setSearchedValue] = useState('');
   //list of accounts matchet with search value
   const [accounts, setAccountsData] = useState<AccountI[] | null>(null);
 
@@ -39,6 +41,9 @@ function App() {
       //set loading true on new username enter
       setLoadingState(true);
 
+      //set searched value
+      setSearchedValue(username);
+
       //call of fetch function to get all variants of usernames
       handleFetch(username);
     } else {
@@ -50,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <AutoCompleteInput handleUsername={handleUsername} isLoading={isLoading} />
-      {accounts ? <ItemsList accounts={accounts} /> : <Welcome />}
+      {accounts ? <ItemsList accounts={accounts} searchedValue={searchedValue} /> : <Welcome />}
     </div>
   );
 }

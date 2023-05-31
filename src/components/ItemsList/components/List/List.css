@@ -61,3 +61,11 @@
   margin-left: 0.5rem;
   font-size: 1rem;
 }
+
+.account-info > h4 > .highlight {
+  background-color: gold;
+  font-weight: bold;
+  color: black;
+  border-radius: 0.25rem;
+  padding: 0 0.15rem;
+}
