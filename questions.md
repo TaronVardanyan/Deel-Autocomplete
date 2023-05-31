@@ -56,10 +56,11 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
          Another approach to passing information from a component to its parent is by utilizing the Context API in React. With the Context API, the parent component creates a context and provides a value to it. The child component can consume the context and access the provided value using the useContext hook. This allows the child component to share data directly with its parent, bypassing intermediate components if necessary.
       </i>
       <br/>
-      1. Callback Functions.
+      3. State Management.
       <i>
          If the application requires more advanced state management, using state management libraries like Redux or MobX can be beneficial. These libraries provide a centralized store where components can dispatch actions to update the state. The parent component can define the store and pass it to the child component as props. The child component can dispatch actions to update the store, and the parent component can listen to these changes and respond accordingly. This approach facilitates passing information from the child component to its parent while synchronizing the state across components.
       </i>
+   <br/>
 </p>
 
 <br/>
