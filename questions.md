@@ -75,6 +75,7 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
 
    <p>
       There is 2 cases regarding what kind of components we wanna use Class? or Functional?
+      <br/>
 
       1. In the first case, whan we are using Class components and as I mentioned in questions <b>#1</b> and <b>#2</b>
 
@@ -82,8 +83,8 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
 
       lifecycle should be structured in good maner.
 
-      2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it only in specific cases, when it will detect State or Props change.
-</p>
+      2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it           only in specific cases, when it will detect State or Props change.
+  </p>
 
-<br/>
+  <br/>
 
