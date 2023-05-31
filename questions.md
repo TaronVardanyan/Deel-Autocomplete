@@ -68,19 +68,14 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
       </i>
       <br/>
    </p>
-
-   <br/>
-
-   <h1 align="left">4. Give 2 ways to prevent components from re-rendering.</h1>
-
-   <p>
-      There is 2 cases regarding what kind of components we wanna use Class? or Functional?
-      <br/>
-
-      1. In the first case, whan we are using Class components and as I mentioned in questions <b>#1</b> and <b>#2</b> we can defenatly use <b>PureComponent</b>, in other case if component instance was extended from React.Component, then our <b>shouldComponentUpdate></b>
-
-      lifecycle should be structured in good maner.
-
-      2. The second case which can be helpful when we don't wanna use Class components is React.memo() HOC. this HOC will re-render component which will be wrapped inside of it only in specific cases, when it will detect State or Props change.
-      </p>
   <br/>
+
+  <h1 align="left">4. Give 2 ways to prevent components from re-rendering.</h1>
+
+  <p>
+     There is 2 cases regarding what kind of components we wanna use Class? or Functional?
+     <br/>
+     In the first scenario, when utilizing Class components as mentioned in questions #1 and #2, we can opt for PureComponent. However, if the component instance extends from React.Component, then we should ensure that our shouldComponentUpdate lifecycle method is implemented correctly.
+
+     The second approach, suitable when avoiding the use of Class components, involves utilizing the React.memo() higher-order component (HOC). This HOC selectively re-renders the component wrapped within it, only when there are detected changes in the State or Props.
+  </p>
