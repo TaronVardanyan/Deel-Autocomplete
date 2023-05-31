@@ -109,9 +109,9 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   <p>
     The most popular 3 HOC's that developers using is
     <br>
-    1. connect HOC from react-redux package
-    2. withRouter HOC from react-router-dom package
-    3. styled HOC's from UI libs such as Material UI or Antd
+    1. connect HOC from react-redux package<br>
+    2. withRouter HOC from react-router-dom package<br>
+    3. styled HOC's from UI libs such as Material UI or Antd<br>
   </p>
 
   <br>
