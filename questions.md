@@ -222,4 +222,62 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   </p>
   <br>
 
+  <h1 align="left">10. List a few ways styles can be used with components.</h1>
+
+  <p>
+     There are several ways to use styles with components in React
+  </p>
+
+  <p>
+   1. Inline Styles.
+   This the oldest way to use styles ))
+   <br>
+   <code>
+      const SomeComponent = () => {
+         const styles = {
+            backgroundColor: 'red',
+            padding: 0,
+         };
+
+         return <div style={styles}>Something</div>;
+      };
+   </code>
+  </p>
+  <br>
+  <p>
+     2. CSS Modules.
+     CSS Modules are a popular approach for styling React components. With CSS Modules, you write CSS code in separate files and import them into your component files. CSS Modules provide local scoping for styles, ensuring that class names are unique to each component.
+     <br>
+     <code>
+        import styles from './SomeComponent.module.css';
+        <br>
+        const SomeComponent = () => {
+           return <div className={styles.container}>Something</div>;
+        };
+     </code>
+  </p>
+  <br>
+  <p>
+     3. CSS-in-JS Libraries.
+     The best case to use styling in React component. Provides flexability and development hight speed!.
+     Can be used Styled-Components or JSS libs.
+     <br>
+     <code>
+        import styled from 'styled-components';
+        <br>
+        const Container = styled.div`
+        background-color: red;
+        padding: 0;
+        `;
+        <br>
+        const SomeComponent = () => {
+           return <Container>Something</Container>;
+        };
+     </code>
+  </p>
+  <br>
+  <p>
+     4. Use UI libs (MaterialUI, Antd, Bootstrap, Tailwind).
+  </p>
+
 
