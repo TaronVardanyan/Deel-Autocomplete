@@ -92,9 +92,9 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      There is two ways of use Fragments.
   <br>
   <br>
-     1. <code>/*<React.Fragment>Something</React.Fragment>*/</code> , which also giving us two pass key property when we wanna use it inside of list structure.
+     1. <pre>/*<React.Fragment>Something</React.Fragment>*/</pre> , which also giving us two pass key property when we wanna use it inside of list structure.
      <br>
-     2. <code><>Something</></code> , Short hand sintax.
+     2. <pre><>Something</></pre> , Short hand sintax.
      <br>
      <br>
      It can break the app, when we are using some third party libs. There can be chance when that lib can ask a ReactNode to pass as a prop , and by mistake developer can pass a component which returns React.Fragment. That case can be harmful for app.
