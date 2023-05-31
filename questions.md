@@ -79,3 +79,21 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
 
      2. The second approach, suitable when avoiding the use of Class components, involves utilizing the React.memo() higher-order component (HOC). This HOC selectively re-renders the component wrapped within it, only when there are detected changes in the State or Props.
   </p>
+
+  <h1 align="left">5. What is a fragment and why do we need it? Give an example where it might break my app.</h1>
+
+  <p>
+     Fragments are syntax hack that allow us to add multiple elements to a React component without wrapping them in an extra DOM node. Sometimes developing a component we need to wrap it in some block structure, because React components cannot return a multiply JSX blocks.
+     Thats why React.Fragment can be really helpful. It's helping us to not get inside of "nesting hell", when there is no need to write a unused div node just as a wrapper of other jsx logic.
+
+     There is two ways of use Fragments.
+
+     1. <React.Fragment>Something</React.Fragment> , which also giving us two pass key property when we wanna use it inside of list structure.
+     <br/>
+     <br/>
+     2. <>Something</> , Short hand sintax.
+
+     It can break the app, when we are using some third party libs. There can be chance when that lib can ask a ReactNode to pass as a prop , and by mistake developer can pass a component which returns React.Fragment. That case can be harmful for app.
+     Also there is a case which I mentioned earlier with passing a key to short hand sintax of Fragment.
+     And the simple case that Fragments are not visible in DOM tree, thats why we cannot give some css styles to it ((.
+  </p>
