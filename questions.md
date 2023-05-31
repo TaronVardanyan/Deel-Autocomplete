@@ -23,7 +23,7 @@ You should go for React.<b>PureComponent</b> when you can satisfy any of the bel
 When props or state changes, <b>PureComponent</b> will do a shallow comparison on both props and state. <b>Component</b> on the other hand won’t compare current props and state to next out of the box. Thus, the component will re-render by default whenever <b>ShouldComponentUpdate</b> is called.
 </p>
 
-<br/>
+<br>
 
 <h1 align="left">2. <b>Context</b> + <b>ShouldComponentUpdate</b> might be dangerous. Why is that?</h1>
 
@@ -39,46 +39,46 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
 3. (Unintended Side Effects) - Context updates can affect multiple components in the component tree. When a component uses shouldComponentUpdate to optimize rendering, it may inadvertently block updates from propagating through the context. This can cause unexpected behavior and inconsistencies in the application's state and UI.
 </p>
 
-<br/>
+<br>
 
 <h1 align="left">3. Describe 3 ways to pass information from a component to its PARENT</h1>
  
 <p>
    When you want to pass information from a component to its parent in React, there are several approaches you can take. Here are three common ways to achieve this:
-   <br/>
-   <br/>
-   <br/>
+   <br>
+   <br>
+   <br>
    1. Callback Functions.
       <i>
          One of the most popular way to pass information from a component to its parent in React is by using callback functions. In this approach, the parent component provides a callback function as a prop to the child component. The child component can invoke the callback function and pass the relevant information as an argument. The parent component receives the data through the callback function and can handle it accordingly. This enables communication between the child and parent components, allowing data to be passed back to the parent.
       </i>
-      <br/>
-      <br/>
+      <br>
+      <br>
       2. Context API.
       <i>
          Another approach to passing information from a component to its parent is by utilizing the Context API in React. With the Context API, the parent component creates a context and provides a value to it. The child component can consume the context and access the provided value using the useContext hook. This allows the child component to share data directly with its parent, bypassing intermediate components if necessary.
          Context is realy helpful, whit it's simplicity.Some times it's a best option to share info between components in small and medium projects.
       </i>
-      <br/>
-      <br/>
+      <br>
+      <br>
       3. State Management.
       <i>
          If the application requires more advanced state management, using state management libraries like Redux or MobX can be beneficial. These libraries provide a centralized store where components can dispatch actions to update the state. The parent component can define the store and pass it to the child component as props. The child component can dispatch actions to update the store, and the parent component can listen to these changes and respond accordingly. This approach facilitates passing information from the child component to its parent while synchronizing the state across components.
          I am a big fan of Recoil and the atomic pattern that it's use, Recoil was created by Meta platform. It's lighter than Redux and Mobx. But it's for small projects. we cannot use it on big projects. On medium or big projects I prefer use Mobx and MST.
       </i>
-      <br/>
+      <br>
    </p>
-  <br/>
+  <br>
 
   <h1 align="left">4. Give 2 ways to prevent components from re-rendering.</h1>
 
   <p>
      There is 2 cases regarding what kind of components we wanna use Class? or Functional?
-     <br/>
-      <br/>
+     <br>
+      <br>
      1. In the first scenario, when utilizing Class components as mentioned in questions 1 and 2, we can opt for PureComponent. However, if the component instance extends from React.Component, then we should ensure that our shouldComponentUpdate lifecycle method is implemented correctly.
-<br/>
- <br/>
+<br>
+ <br>
      2. The second approach, suitable when avoiding the use of Class components, involves utilizing the React.memo() higher-order component (HOC). This HOC selectively re-renders    the component wrapped within it, only when there are detected changes in the State or Props.
   </p>
 
@@ -87,15 +87,14 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   <p>
      Fragments are syntax hack that allow us to add multiple elements to a React component without wrapping them in an extra DOM node. Sometimes developing a component we need to wrap it in some block structure, because React components cannot return a multiply JSX blocks.
      Thats why React.Fragment can be really helpful. It's helping us to not get inside of "nesting hell", when there is no need to write a unused div node just as a wrapper of other jsx logic.
-     <br/>
-     <br/>
+  <br>
+  <br>
      There is two ways of use Fragments.
-     <br/>
-     <br/>
+  <br>
+  <br>
      
      1. <code><React.Fragment>Something</React.Fragment></code> , which also giving us two pass key property when we wanna use it inside of list structure.
      2. <code><>Something</></code> , Short hand sintax.
-
      It can break the app, when we are using some third party libs. There can be chance when that lib can ask a ReactNode to pass as a prop , and by mistake developer can pass a component which returns React.Fragment. That case can be harmful for app.
      Also there is a case which I mentioned earlier with passing a key to short hand sintax of Fragment.
      And the simple case that Fragments are not visible in DOM tree, thats why we cannot give some css styles to it ((.
