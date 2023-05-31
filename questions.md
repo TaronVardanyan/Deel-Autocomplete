@@ -199,5 +199,27 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      optional function that will be executed after the state has been successfully updated. It can be used to perform additional tasks or trigger side effects that rely on the updated state.
   </p>
 
+  <h1 align="left">9. List the steps needed to migrate a Class to Function Component.</h1>
+
+  <p>
+     1. Check component's lifecycle methods and state. Identify any lifecycle methods and replace the logic from inside of them, as well as any local state (this.state) that is need to be replaced with useState hook.
+  </p>
+  <br>
+  <p>
+     2. Remove class identification. Use Arrow function or Function Declaration with the same name that class component was using.
+  </p>
+  <br>
+  <p>
+     3. replace render method with return statement.
+  </p>
+  <br>
+  <p>
+     4. Change event handlers to function expressions
+  </p>
+  <br>
+  <p>
+     5. Configure useEffect to be able replace lifecycle methods
+  </p>
+  <br>
 
 
