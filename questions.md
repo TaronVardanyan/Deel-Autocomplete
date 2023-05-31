@@ -250,7 +250,7 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      <br>
      <code>
         import styles from './SomeComponent.module.css';
-        <br>
+
         const SomeComponent = () => {
            return <div className={styles.container}>Something</div>;
         };
@@ -264,12 +264,12 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      <br>
      <code>
         import styled from 'styled-components';
-        <br>
+
         const Container = styled.div`
         background-color: red;
         padding: 0;
         `;
-        <br>
+
         const SomeComponent = () => {
            return <Container>Something</Container>;
         };
@@ -290,7 +290,8 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
   <br>
   <code>
      const SomeComponent = ({ htmlString }) => {
-        return <div dangerouslySetInnerHTML={{ __html: htmlString }} />;
+        
+        return (<div dangerouslySetInnerHTML={{ __html: htmlString }} ></div>);
      };
   </code>
   <br>
