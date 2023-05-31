@@ -41,7 +41,7 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
 
 <br/>
 
-<h1 align="left">Describe 3 ways to pass information from a component to its PARENT</h1>
+<h1 align="left">3. Describe 3 ways to pass information from a component to its PARENT</h1>
  
 <p>
    When you want to pass information from a component to its parent in React, there are several approaches you can take. Here are three common ways to achieve this:
