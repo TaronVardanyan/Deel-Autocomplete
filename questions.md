@@ -280,4 +280,23 @@ Here are a few reasons why the combination of <b>Context</b> and <b>ShouldCompon
      4. Use UI libs (MaterialUI, Antd, Bootstrap, Tailwind).
   </p>
 
+  <br>
+
+  <h1 align="left">11. How to render an HTML string coming from the server.</h1>
+
+  <p>
+     To render an HTML string coming from the server in a React component, you can use the <b>dangerouslySetInnerHTML</b> attribute provided by React.
+  </p>
+  <br>
+  <code>
+     const SomeComponent = ({ htmlString }) => {
+        return <div dangerouslySetInnerHTML={{ __html: htmlString }} />;
+     };
+  </code>
+  <br>
+  <p>
+     dangerouslySetInnerHTML prop should be used with caution because it can pose a security risk if the HTML content is not properly sanitized. Developer need to be sure to carefully validated any HTML string before using it with dangerouslySetInnerHTML to prevent any potential cross-site scripting (XSS) attacks or other security vulnerabilities.
+  </p>
+
+
 
